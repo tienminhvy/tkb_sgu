@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra trùng môn và tạo thời khoá biểu</title>
+    <link rel="stylesheet" href="./style.min.css">
+</head>
+<body>
+    <div class="user_actions">
+        <div id="nhap">
+            <p class='ghichu_matran'>Ghi chú: cột 1 => thứ, cột 2 => tiết bắt đầu, cột 3 => số tiết</p>
+            <div class="nhap__input">
+                <div class="input">
+                    <input type="text" class="ten_mon" placeholder="Tên môn học">
+                    <input type="text" class="thong_tin_mon" placeholder="Cột 1: thứ, cột 2: tiết bắt đầu, cột 3: số tiết">
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <button id="matran">Nhập theo kiểu ma trận</button>
+        <button id="macdinh">Nhập mặc định</button>
+        <button id="kiem_tra">Kiểm tra</button>
+        <button id="them_mon">Thêm môn</button>
+        <br>
+        <button id="tao_tkb">Tạo thời khoá biểu</button>
+        <button id="chuptkb">Lưu thời khoá biểu về máy</button>
+    </div>
+    <div id="tkb_container">
+        <table id="tkb"></table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.3.3/dist/html2canvas.min.js" integrity="sha256-QT3W6xEiCZLGc8yEu9fiRM+V1UlKjJ/WEfg1VXnFns4=" crossorigin="anonymous"></script>
+    <script src="./script.min.js"></script>
+</body>
+</html>
